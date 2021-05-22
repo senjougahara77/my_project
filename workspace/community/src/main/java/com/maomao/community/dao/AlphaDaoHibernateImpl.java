@@ -1,4 +1,4 @@
-package com.nowcoder.community.dao;
+package com.maomao.community.dao;
 
 import org.springframework.stereotype.Repository;
 

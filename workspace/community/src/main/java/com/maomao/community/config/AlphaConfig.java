@@ -1,4 +1,4 @@
-package com.nowcoder.community.config;
+package com.maomao.community.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

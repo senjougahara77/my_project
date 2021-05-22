@@ -1,4 +1,4 @@
-package com.nowcoder.community.dao;
+package com.maomao.community.dao;
 
 public interface AlphaDao {
 
