@@ -1,0 +1,22 @@
+2021-05-28 20:35:35.250  INFO 9389 --- [main] com.maomao.community.LoggerTests         : Starting LoggerTests using Java 14.0.2 on 192.168.0.106 with PID 9389 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-05-28 20:35:35.251 DEBUG 9389 --- [main] com.maomao.community.LoggerTests         : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-05-28 20:35:35.253  INFO 9389 --- [main] com.maomao.community.LoggerTests         : No active profile set, falling back to default profiles: default
+2021-05-28 20:35:36.934  INFO 9389 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 20:35:37.038  INFO 9389 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-28 20:35:37.501  INFO 9389 --- [main] com.maomao.community.LoggerTests         : Started LoggerTests in 2.639 seconds (JVM running for 3.509)
+2021-05-28 20:35:38.207 DEBUG 9389 --- [main] com.maomao.community.LoggerTests         : debug log
+2021-05-28 20:35:38.208  INFO 9389 --- [main] com.maomao.community.LoggerTests         : info log
+2021-05-28 20:35:38.208  WARN 9389 --- [main] com.maomao.community.LoggerTests         : warn log
+2021-05-28 20:35:38.208 ERROR 9389 --- [main] com.maomao.community.LoggerTests         : error log
+2021-05-28 20:35:38.223  INFO 9389 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-28 20:47:27.582  INFO 9895 --- [main] com.maomao.community.LoggerTests         : Starting LoggerTests using Java 14.0.2 on 192.168.0.106 with PID 9895 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-05-28 20:47:27.584 DEBUG 9895 --- [main] com.maomao.community.LoggerTests         : Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-05-28 20:47:27.588  INFO 9895 --- [main] com.maomao.community.LoggerTests         : No active profile set, falling back to default profiles: default
+2021-05-28 20:47:29.887  INFO 9895 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 20:47:30.009  INFO 9895 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-28 20:47:30.343  INFO 9895 --- [main] com.maomao.community.LoggerTests         : Started LoggerTests in 3.232 seconds (JVM running for 4.104)
+2021-05-28 20:47:30.848 DEBUG 9895 --- [main] com.maomao.community.LoggerTests         : debug log
+2021-05-28 20:47:30.849  INFO 9895 --- [main] com.maomao.community.LoggerTests         : info log
+2021-05-28 20:47:30.849  WARN 9895 --- [main] com.maomao.community.LoggerTests         : warn log
+2021-05-28 20:47:30.850 ERROR 9895 --- [main] com.maomao.community.LoggerTests         : error log
+2021-05-28 20:47:30.861  INFO 9895 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
