@@ -1,0 +1,7 @@
+2021-05-28 20:49:06,869 INFO [main] c.m.c.LoggerTests [StartupInfoLogger.java:55] Starting LoggerTests using Java 14.0.2 on 192.168.0.106 with PID 9960 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-05-28 20:49:06,873 INFO [main] c.m.c.LoggerTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-05-28 20:49:08,427 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-28 20:49:08,515 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-05-28 20:49:08,788 INFO [main] c.m.c.LoggerTests [StartupInfoLogger.java:61] Started LoggerTests in 2.336 seconds (JVM running for 3.261)
+2021-05-28 20:49:09,182 INFO [main] c.m.c.LoggerTests [LoggerTests.java:22] info log
+2021-05-28 20:49:09,197 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
