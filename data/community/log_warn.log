@@ -1,1 +1,1 @@
-2021-05-28 20:49:09,182 WARN [main] c.m.c.LoggerTests [LoggerTests.java:23] warn log
+2021-06-12 00:41:09,511 WARN [http-nio-8080-exec-7] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'image/.jpg']

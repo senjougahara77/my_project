@@ -1,0 +1,8 @@
+2021-06-10 15:25:26,493 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:590] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'alphaController' method 
+com.maomao.community.controller.AlphaController#getCookie()
+to {GET [/alpha/cookie/set]}: There is already 'alphaController' bean method
+com.maomao.community.controller.AlphaController#setCookie(HttpServletResponse) mapped.
+2021-06-10 15:25:28,397 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:590] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'alphaController' method 
+com.maomao.community.controller.AlphaController#getCookie()
+to {GET [/alpha/cookie/set]}: There is already 'alphaController' bean method
+com.maomao.community.controller.AlphaController#setCookie(HttpServletResponse) mapped.

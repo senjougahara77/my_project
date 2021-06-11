@@ -1,0 +1,42 @@
+2021-06-05 00:00:19,588 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54021 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:00:19,598 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:00:22,105 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:00:22,383 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:00:22,855 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 8.994 seconds (JVM running for 10.575)
+2021-06-05 00:00:29,087 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:03:46,281 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54186 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:03:46,285 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:03:48,229 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:03:48,333 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:03:48,630 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.795 seconds (JVM running for 3.729)
+2021-06-05 00:03:53,975 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:05:48,957 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54276 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:05:48,960 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:05:50,764 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:05:50,859 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:05:51,137 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.565 seconds (JVM running for 3.494)
+2021-06-05 00:05:56,653 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:16:32,243 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54754 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:16:32,246 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:16:34,170 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:16:34,289 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:16:34,605 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.779 seconds (JVM running for 3.75)
+2021-06-05 00:16:39,081 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:17:53,991 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54820 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:17:53,994 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:17:55,745 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:17:55,856 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:17:56,123 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.537 seconds (JVM running for 3.439)
+2021-06-05 00:18:00,436 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:20:10,094 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 54912 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:20:10,097 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:20:11,621 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:20:11,725 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:20:12,022 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.341 seconds (JVM running for 3.212)
+2021-06-05 00:20:17,393 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:32:04,842 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:55] Starting MailTests using Java 14.0.2 on maiheridembp with PID 55434 (started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-05 00:32:04,846 INFO [main] c.m.c.MailTests [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-05 00:32:06,865 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 00:32:06,971 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-05 00:32:07,273 INFO [main] c.m.c.MailTests [StartupInfoLogger.java:61] Started MailTests in 2.897 seconds (JVM running for 3.921)
+2021-06-05 00:32:12,867 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
