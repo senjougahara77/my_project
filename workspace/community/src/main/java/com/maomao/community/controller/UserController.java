@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
@@ -111,4 +112,22 @@ public class UserController {
             logger.error("读取头像失败：" + e.getMessage());
         }
     }
+    // 修改密码
+    @RequestMapping(path = "/updatePsw", method = RequestMethod.POST)
+    public String updatePsw(Model model, String prePsw, String newPsw, String conPsw) {
+        User user = hostHolder.getUser();
+        Map<String, Object> map = userService.UpdatePsw(prePsw, newPsw, conPsw, user.getId());
+        if (map == null || map.isEmpty()) {
+            model.addAttribute("message", "密码修改成功，正在跳转到首页");
+            model.addAttribute("target", "/index");
+            return "/site/operate-result";
+        } else {
+            model.addAttribute("prePswMs", map.get("prePswMs"));
+            model.addAttribute("newPswMs", map.get("newPswMs"));
+            model.addAttribute("conPswMs", map.get("conPswMs"));
+            return "/site/setting";
+        }
+    }
+
+
 }

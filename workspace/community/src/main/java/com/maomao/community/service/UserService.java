@@ -177,5 +177,38 @@ public class UserService implements CommunityConstant {
     public int updateHeader(int userId, String headUrl) {
         return userMapper.updateHeader(userId, headUrl);
     }
+
+    public Map<String, Object> UpdatePsw(String prePsw, String newPsw, String conPsw, int userId) {
+        HashMap<String, Object> map = new HashMap<>();
+        if (prePsw == null) {
+            map.put("prePswMs", "原密码不能为空！");
+            return map;
+        }
+        if (newPsw == null) {
+            map.put("newPswMs", "新密码不能为空！");
+            return map;
+        }
+        if (!newPsw.equals(conPsw)) {
+            map.put("conPswMs", "两次密码不一致！");
+            return map;
+        }
+
+        //确认密码的判断逻辑是在前端完成的
+        //到这一步信息填写完整，下面进行原密码的验证
+        User user = userMapper.selectById(userId);
+        if (!(user.getPassword().equals(CommunityUtil.md5(prePsw + user.getSalt())))) {
+            map.put("prePswMs", "原密码不正确");
+            return map;
+        }
+        //到这里就完成所有错误情况的处理了，下面进行修改密码的操作
+        //记得加盐和md5的加密操作，同时要将新生成的salt同步到用户表中
+        //String salt = CommunityUtil.generateUUID();
+        newPsw = CommunityUtil.md5(newPsw + user.getSalt());
+        userMapper.updatePassword(user.getId(), newPsw);
+        //于是controller就可以根据map中是否有内容，来选择转发请求回修改界面还是重定向到首页
+
+        return map;
+
+    }
 }
 
