@@ -1,5 +1,6 @@
 package com.maomao.community.controller;
 
+import com.maomao.community.annotaion.LoginRequired;
 import com.maomao.community.entity.User;
 import com.maomao.community.service.UserService;
 import com.maomao.community.util.CommunityUtil;
@@ -47,11 +48,13 @@ public class UserController {
     @Autowired
     private HostHolder hostHolder;
 
+    @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
     public String getSettingPage() {
         return "/site/setting";
     }
 
+    @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
         if (headerImage == null) {

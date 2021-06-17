@@ -4,7 +4,10 @@ import com.maomao.community.entity.DiscussPost;
 import com.maomao.community.entity.Page;
 import com.maomao.community.entity.User;
 import com.maomao.community.service.DiscussPostService;
+import com.maomao.community.service.LikeService;
 import com.maomao.community.service.UserService;
+import com.maomao.community.util.CommunityConstant;
+import com.maomao.community.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,13 +20,16 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class HomeController {
+public class HomeController implements CommunityConstant {
 
     @Autowired
     private DiscussPostService discussPostService;
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page) {
@@ -39,12 +45,20 @@ public class HomeController {
                 map.put("post", post);
                 User user = userService.findUserById(post.getUserId());
                 map.put("user", user);
+
+                long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, post.getId());
+                map.put("likeCount", likeCount);
                 discussPosts.add(map);
             }
         }
         // 把获得数据放入model返回给页面
         model.addAttribute("discussPosts", discussPosts);
         return "/index";
+    }
+
+    @RequestMapping(path = "/error", method = RequestMethod.GET)
+    public String getErrorPage() {
+        return "/error/500";
     }
 
 }

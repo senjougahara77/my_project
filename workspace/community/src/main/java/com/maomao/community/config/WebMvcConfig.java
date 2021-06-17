@@ -1,6 +1,7 @@
 package com.maomao.community.config;
 
 import com.maomao.community.controller.interceptor.AlphaInterceptor;
+import com.maomao.community.controller.interceptor.LoginRequiredInterceptor;
 import com.maomao.community.controller.interceptor.LoginTicketInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +18,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired
     private LoginTicketInterceptor loginTicketInterceptor;
 
+    @Autowired
+    private LoginRequiredInterceptor loginRequiredInterceptor;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 静态资源不拦截
@@ -25,6 +29,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/register", "/login");
 
         registry.addInterceptor(loginTicketInterceptor)
+                .excludePathPatterns("/*/*.css", "/*/*.js", "/*/*.png", "/*/*.jpg", "/*/*.jpeg");
+
+        registry.addInterceptor(loginRequiredInterceptor)
                 .excludePathPatterns("/*/*.css", "/*/*.js", "/*/*.png", "/*/*.jpg", "/*/*.jpeg");
     }
 }

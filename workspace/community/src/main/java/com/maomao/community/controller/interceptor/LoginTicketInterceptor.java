@@ -22,6 +22,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 
     @Autowired
     private HostHolder hostHolder;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 从cookie中获取ticket
@@ -45,7 +46,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         User user = hostHolder.getUser();
-        if (user != null || modelAndView != null) {
+        if (user != null && modelAndView != null) {
             modelAndView.addObject("loginUser", user);
         }
     }

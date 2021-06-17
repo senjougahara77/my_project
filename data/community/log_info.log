@@ -1,195 +1,177 @@
-2021-06-13 00:01:02,735 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:01:02,753 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:01:02,772 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:01:05,735 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 33123 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:01:05,739 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:01:05,803 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:01:05,804 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:01:07,244 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:01:07,257 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:01:07,258 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:01:07,258 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:01:07,330 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:01:07,331 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1526 ms
-2021-06-13 00:01:07,847 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:01:07,930 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:01:08,059 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:01:08,071 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:01:08,090 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:01:08,104 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.829 seconds (JVM running for 3.402)
-2021-06-13 00:01:21,769 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:01:21,770 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:01:21,772 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
-2021-06-13 00:01:21,812 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:01:22,010 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:24:21,499 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:24:21,506 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:24:21,555 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:24:26,121 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 34325 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:24:26,124 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:24:26,185 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:24:26,185 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:24:27,559 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:24:27,570 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:24:27,570 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:24:27,571 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:24:27,637 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:24:27,637 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1451 ms
-2021-06-13 00:24:28,200 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:24:28,285 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:24:28,418 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:24:28,432 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:24:28,451 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:24:28,464 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.849 seconds (JVM running for 3.404)
-2021-06-13 00:24:35,077 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:24:35,078 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:24:35,085 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
-2021-06-13 00:24:35,136 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:24:35,396 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:27:47,593 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:27:47,598 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:27:47,620 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:27:50,380 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 34469 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:27:50,382 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:27:50,447 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:27:50,448 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:27:51,845 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:27:51,857 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:27:51,857 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:27:51,858 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:27:51,926 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:27:51,926 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1477 ms
-2021-06-13 00:27:52,671 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:27:52,798 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:27:52,954 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:27:52,971 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:27:53,000 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:27:53,019 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.162 seconds (JVM running for 3.651)
-2021-06-13 00:28:01,735 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:28:01,736 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:28:01,738 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
-2021-06-13 00:28:01,777 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:28:01,993 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:38:54,423 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:38:54,429 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:38:54,463 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:38:58,661 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 34956 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:38:58,664 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:38:58,738 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:38:58,738 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:39:00,053 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:39:00,069 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:39:00,070 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:39:00,071 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:39:00,141 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:39:00,142 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1403 ms
-2021-06-13 00:39:00,768 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:39:00,866 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:39:01,039 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:39:01,068 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:39:01,095 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:39:01,109 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.959 seconds (JVM running for 3.455)
-2021-06-13 00:39:06,432 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:39:06,435 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:39:06,442 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 7 ms
-2021-06-13 00:39:06,487 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:39:06,708 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:42:31,530 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:42:31,542 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:42:31,567 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:42:34,560 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 35128 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:42:34,564 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:42:34,624 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:42:34,624 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:42:35,902 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:42:35,916 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:42:35,916 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:42:35,917 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:42:35,990 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:42:35,990 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1365 ms
-2021-06-13 00:42:36,539 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:42:36,629 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:42:36,778 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:42:36,794 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:42:36,813 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:42:36,824 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.809 seconds (JVM running for 3.293)
-2021-06-13 00:43:18,877 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:43:18,878 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:43:18,892 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 13 ms
-2021-06-13 00:43:18,946 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:43:19,177 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:47:23,897 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:47:23,902 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:47:23,924 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:47:27,803 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 35352 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:47:27,807 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:47:27,893 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:47:27,894 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:47:29,176 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:47:29,186 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:47:29,187 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:47:29,187 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:47:29,255 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:47:29,255 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1360 ms
-2021-06-13 00:47:29,958 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:47:30,061 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:47:30,205 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:47:30,234 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:47:30,260 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:47:30,275 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.053 seconds (JVM running for 3.546)
-2021-06-13 00:47:34,268 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:47:34,269 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:47:34,271 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
-2021-06-13 00:47:34,310 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:47:34,502 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:48:45,186 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:48:45,188 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:48:45,197 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:48:48,826 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 35424 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:48:48,829 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:48:48,899 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:48:48,900 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:48:50,187 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:48:50,202 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:48:50,202 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:48:50,203 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:48:50,282 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:48:50,283 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1382 ms
-2021-06-13 00:48:50,895 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:48:50,976 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:48:51,120 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:48:51,135 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:48:51,156 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:48:51,166 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 2.801 seconds (JVM running for 3.347)
-2021-06-13 00:48:53,983 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:48:53,984 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:48:53,985 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-06-13 00:48:54,025 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:48:54,208 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:49:13,088 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:49:13,090 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:49:13,101 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-06-13 00:49:16,896 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 35450 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
-2021-06-13 00:49:16,900 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
-2021-06-13 00:49:16,983 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-13 00:49:16,984 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-13 00:49:18,303 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-06-13 00:49:18,317 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:49:18,318 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-06-13 00:49:18,318 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-06-13 00:49:18,376 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-06-13 00:49:18,376 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1392 ms
-2021-06-13 00:49:18,847 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:49:18,933 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2021-06-13 00:49:19,164 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-06-13 00:49:19,189 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-06-13 00:49:19,222 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2021-06-13 00:49:19,239 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 3.049 seconds (JVM running for 3.674)
-2021-06-13 00:49:20,744 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-13 00:49:20,745 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-06-13 00:49:20,747 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2021-06-13 00:49:20,794 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-06-13 00:49:20,993 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-06-13 00:49:41,132 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-06-13 00:49:41,134 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-06-13 00:49:41,143 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-06-18 00:14:42,229 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-18 00:14:42,534 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-06-18 00:14:42,545 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-06-18 00:14:47,503 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:55] Starting CommunityApplication using Java 14.0.2 on maiheridembp with PID 49768 (/Users/maiheri/Documents/work/workspace/community/target/classes started by maiheri in /Users/maiheri/Documents/work/workspace/community)
+2021-06-18 00:14:47,506 INFO [restartedMain] c.m.c.CommunityApplication [SpringApplication.java:660] No active profile set, falling back to default profiles: default
+2021-06-18 00:14:47,562 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-18 00:14:47,562 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-18 00:14:48,348 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:250] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-18 00:14:48,351 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:128] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-18 00:14:48,384 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:188] Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021-06-18 00:14:49,408 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-06-18 00:14:49,419 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-18 00:14:49,419 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-06-18 00:14:49,419 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-18 00:14:49,495 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-06-18 00:14:49,496 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1933 ms
+2021-06-18 00:14:50,687 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-18 00:14:50,800 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-18 00:14:51,101 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-06-18 00:14:51,118 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-06-18 00:14:51,148 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2021-06-18 00:14:51,164 INFO [restartedMain] c.m.c.CommunityApplication [StartupInfoLogger.java:61] Started CommunityApplication in 4.223 seconds (JVM running for 4.893)
+2021-06-18 00:14:58,532 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-18 00:14:58,534 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-06-18 00:14:58,541 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 7 ms
+2021-06-18 00:14:58,583 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:58]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:14:58,630 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-06-18 00:14:58,952 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-06-18 00:14:59,079 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,121 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPostRows]。
+2021-06-18 00:14:59,178 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPosts]。
+2021-06-18 00:14:59,217 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,222 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,646 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,652 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,654 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,660 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,662 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,668 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,670 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,674 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,676 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,680 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,682 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,686 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,688 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,693 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,695 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,701 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:14:59,702 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:14:59,707 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:14:59]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:01,604 INFO [http-nio-8080-exec-3] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:01]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:01,636 INFO [http-nio-8080-exec-3] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:01]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,476 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:02,480 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,498 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPostById]。
+2021-06-18 00:15:02,504 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,511 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,518 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,548 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,568 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,574 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,575 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,578 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,582 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,588 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,590 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,593 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,596 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,598 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,599 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,603 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,607 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,612 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,613 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:02,618 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,621 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,623 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,625 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,630 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:02,633 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,636 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,637 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,639 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,643 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:02,646 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,649 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,650 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,652 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,655 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:02,660 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:02,665 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:02,666 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:02,668 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:02,671 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:02]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:03,661 INFO [http-nio-8080-exec-9] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:03]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:03,674 INFO [http-nio-8080-exec-9] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:03]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:06,787 INFO [http-nio-8080-exec-5] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:06]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:06,791 INFO [http-nio-8080-exec-5] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:06]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:06,796 INFO [http-nio-8080-exec-5] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:06]，访问了[com.maomao.community.service.LikeService.like]。
+2021-06-18 00:15:06,801 INFO [http-nio-8080-exec-5] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:06]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:06,803 INFO [http-nio-8080-exec-5] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:06]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:07,340 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:07]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:07,343 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:07]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:07,346 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:07]，访问了[com.maomao.community.service.LikeService.like]。
+2021-06-18 00:15:07,348 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:07]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:07,349 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:07]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:11,790 INFO [http-nio-8080-exec-2] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:11]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:11,795 INFO [http-nio-8080-exec-2] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:11]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:11,798 INFO [http-nio-8080-exec-2] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:11]，访问了[com.maomao.community.service.LikeService.like]。
+2021-06-18 00:15:11,801 INFO [http-nio-8080-exec-2] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:11]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:11,806 INFO [http-nio-8080-exec-2] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:11]，访问了[com.maomao.community.service.LikeService.findEntityLikeStatus]。
+2021-06-18 00:15:14,782 INFO [http-nio-8080-exec-3] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:14]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:14,788 INFO [http-nio-8080-exec-3] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:14]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:14,801 INFO [http-nio-8080-exec-3] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:14]，访问了[com.maomao.community.service.UserService.logout]。
+2021-06-18 00:15:14,875 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:14]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:15,014 INFO [http-nio-8080-exec-9] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:15]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:19,987 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:19]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:19,992 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:19]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPostRows]。
+2021-06-18 00:15:19,995 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:19]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPosts]。
+2021-06-18 00:15:20,007 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,010 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,011 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,014 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,015 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,017 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,018 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,021 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,023 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,025 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,026 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,029 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,030 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,033 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,033 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,035 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,036 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,038 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,039 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:20,041 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:20,242 INFO [http-nio-8080-exec-4] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:20]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:22,710 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:22,715 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.DiscussPostService.findDiscussPostById]。
+2021-06-18 00:15:22,719 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,722 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,724 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,733 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,736 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,737 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,745 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,748 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,749 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,753 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,754 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,759 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,762 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,764 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:22,768 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,770 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,771 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,774 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:22,776 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,779 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,781 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,783 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:22,787 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,789 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,790 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,793 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:22,796 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.UserService.findUserById]。
+2021-06-18 00:15:22,799 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.LikeService.findEntityLikeCount]。
+2021-06-18 00:15:22,800 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentByEntity]。
+2021-06-18 00:15:22,803 INFO [http-nio-8080-exec-6] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:22]，访问了[com.maomao.community.service.CommentService.findCommentCount]。
+2021-06-18 00:15:25,653 INFO [http-nio-8080-exec-1] c.m.c.a.ServiceLogAspect [ServiceLogAspect.java:39] 用户[0:0:0:0:0:0:0:1], 在[2021-06-18 00:15:25]，访问了[com.maomao.community.service.UserService.findLoginTicket]。
+2021-06-18 00:15:52,707 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-18 00:15:52,852 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-06-18 00:15:52,875 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

@@ -208,7 +208,10 @@ public class UserService implements CommunityConstant {
         //于是controller就可以根据map中是否有内容，来选择转发请求回修改界面还是重定向到首页
 
         return map;
+    }
 
+    public User findUserByName(String name) {
+        return userMapper.selectByName(name);
     }
 }
 
