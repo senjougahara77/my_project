@@ -1,0 +1,3 @@
+[2021-06-20 02:17:44,838] INFO [GroupCoordinator 0]: Member[group.instance.id None, member.id consumer-test-consumer-group-1-ee65ae4d-ed86-40c4-acd0-553431c19378] in group test-consumer-group has left, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2021-06-20 02:17:45,426] INFO [GroupCoordinator 0]: Preparing to rebalance group test-consumer-group in state PreparingRebalance with old generation 36 (__consumer_offsets-31) (reason: removing member consumer-test-consumer-group-1-ee65ae4d-ed86-40c4-acd0-553431c19378 on LeaveGroup) (kafka.coordinator.group.GroupCoordinator)
+[2021-06-20 02:17:45,433] INFO [GroupCoordinator 0]: Group test-consumer-group with generation 37 is now empty (__consumer_offsets-31) (kafka.coordinator.group.GroupCoordinator)
