@@ -1,0 +1,4 @@
+[2021-06-24T01:06:00,208][INFO ][o.e.x.m.MlDailyMaintenanceService] [LCgrVRs] triggering scheduled [ML] maintenance tasks
+[2021-06-24T01:06:00,222][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [LCgrVRs] Deleting expired data
+[2021-06-24T01:06:00,270][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [LCgrVRs] Completed deletion of expired data
+[2021-06-24T01:06:00,271][INFO ][o.e.x.m.MlDailyMaintenanceService] [LCgrVRs] Successfully completed [ML] maintenance tasks

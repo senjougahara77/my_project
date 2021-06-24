@@ -1,0 +1,43 @@
+[2021-06-23T14:10:23.879+0000][89796][gc] Using Concurrent Mark Sweep
+[2021-06-23T14:10:23.879+0000][89796][gc,heap,coops] Heap address: 0x00000007c0000000, size: 1024 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+[2021-06-23T14:10:23.930+0000][89796][safepoint    ] Entering safepoint region: EnableBiasedLocking
+[2021-06-23T14:10:23.930+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:23.930+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0001129 seconds, Stopping threads took: 0.0000754 seconds
+[2021-06-23T14:10:23.937+0000][89796][safepoint    ] Application time: 0.0048325 seconds
+[2021-06-23T14:10:23.937+0000][89796][safepoint    ] Entering safepoint region: RevokeBias
+[2021-06-23T14:10:23.937+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:23.937+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0001057 seconds, Stopping threads took: 0.0000705 seconds
+[2021-06-23T14:10:24.011+0000][89796][safepoint    ] Application time: 0.0738750 seconds
+[2021-06-23T14:10:24.011+0000][89796][safepoint    ] Entering safepoint region: RevokeBias
+[2021-06-23T14:10:24.011+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.011+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0000562 seconds, Stopping threads took: 0.0000120 seconds
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Application time: 0.0269415 seconds
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Entering safepoint region: Deoptimize
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0000623 seconds, Stopping threads took: 0.0000117 seconds
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Application time: 0.0002803 seconds
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Entering safepoint region: Deoptimize
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.038+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0000433 seconds, Stopping threads took: 0.0000105 seconds
+[2021-06-23T14:10:24.339+0000][89796][safepoint    ] Application time: 0.3011025 seconds
+[2021-06-23T14:10:24.339+0000][89796][safepoint    ] Entering safepoint region: Deoptimize
+[2021-06-23T14:10:24.340+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.340+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0001434 seconds, Stopping threads took: 0.0000123 seconds
+[2021-06-23T14:10:24.359+0000][89796][safepoint    ] Application time: 0.0195869 seconds
+[2021-06-23T14:10:24.359+0000][89796][safepoint    ] Entering safepoint region: Deoptimize
+[2021-06-23T14:10:24.359+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.359+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0001042 seconds, Stopping threads took: 0.0000113 seconds
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Application time: 0.1192878 seconds
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Entering safepoint region: RevokeBias
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Leaving safepoint region
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Total time for which application threads were stopped: 0.0000612 seconds, Stopping threads took: 0.0000115 seconds
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ] Heap
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]  par new generation   total 314560K, used 61569K [0x00000007c0000000, 0x00000007d5550000, 0x00000007d5550000)
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]   eden space 279616K,  22% used [0x00000007c0000000, 0x00000007c3c207c0, 0x00000007d1110000)
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]   from space 34944K,   0% used [0x00000007d1110000, 0x00000007d1110000, 0x00000007d3330000)
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]   to   space 34944K,   0% used [0x00000007d3330000, 0x00000007d3330000, 0x00000007d5550000)
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]  concurrent mark-sweep generation total 699072K, used 0K [0x00000007d5550000, 0x0000000800000000, 0x0000000800000000)
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]  Metaspace       used 17147K, capacity 17588K, committed 17792K, reserved 1064960K
+[2021-06-23T14:10:24.479+0000][89796][gc,heap,exit ]   class space    used 1917K, capacity 2116K, committed 2176K, reserved 1048576K
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Application time: 0.0003233 seconds
+[2021-06-23T14:10:24.479+0000][89796][safepoint    ] Entering safepoint region: Halt

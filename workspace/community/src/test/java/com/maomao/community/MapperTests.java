@@ -8,7 +8,7 @@ import com.maomao.community.entity.DiscussPost;
 import com.maomao.community.entity.LoginTicket;
 import com.maomao.community.entity.Message;
 import com.maomao.community.entity.User;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

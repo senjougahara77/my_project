@@ -1,9 +1,7 @@
 package com.maomao.community.controller;
 
-import com.maomao.community.entity.Comment;
-import com.maomao.community.entity.DiscussPost;
-import com.maomao.community.entity.Page;
-import com.maomao.community.entity.User;
+import com.maomao.community.entity.*;
+import com.maomao.community.event.EventProducer;
 import com.maomao.community.service.CommentService;
 import com.maomao.community.service.DiscussPostService;
 import com.maomao.community.service.LikeService;
@@ -40,6 +38,11 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private LikeService likeService;
 
+    @Autowired
+    private EventProducer producer;
+
+
+
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
     public String addDiscussPost(String title, String content) {
@@ -54,6 +57,14 @@ public class DiscussPostController implements CommunityConstant {
         post.setContent(content);
         post.setCreateTime(new Date());
         discussPostService.addDiscussPost(post);
+
+        // 触发发帖时间
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(post.getId());
+        producer.fireEvent(event);
 
         // 报错将来统一处理
         return CommunityUtil.getJSONString(0,"发布成功！");

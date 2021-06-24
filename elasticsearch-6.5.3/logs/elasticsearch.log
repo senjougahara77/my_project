@@ -1,0 +1,1488 @@
+[2021-06-23T00:42:37,597][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:42:37,599][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:42:37,601][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:42:37,601][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56547], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:42:37,601][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.cyhg0x71, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:42:38,868][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+[2021-06-23T00:42:38,875][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:42:47,510][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:42:47,513][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:42:47,516][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:42:47,516][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56605], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:42:47,516][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.9eFLxZ06, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:42:48,584][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+[2021-06-23T00:42:48,589][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:42:53,409][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:42:53,412][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:42:53,414][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:42:53,414][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56652], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:42:53,414][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.LzbNBBHZ, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:42:54,473][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+[2021-06-23T00:42:54,478][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:43:00,996][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:43:00,998][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:43:01,000][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:43:01,000][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56701], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:43:01,000][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.LSnNIJOw, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:43:02,103][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+[2021-06-23T00:43:02,108][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:43:08,009][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:43:08,011][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:43:08,013][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:43:08,013][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56750], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:43:08,013][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.3aI3tlxI, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:43:08,967][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Exception
+java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [elasticsearch-6.5.3.jar:6.5.3]
+[2021-06-23T00:43:08,972][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: java.lang.IllegalArgumentException: Plugin [analysis-ik] was built for Elasticsearch version 6.4.3 but version 6.5.3 is running
+	at org.elasticsearch.plugins.PluginsService.verifyCompatibility(PluginsService.java:339) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundle(PluginsService.java:524) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.loadBundles(PluginsService.java:464) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:156) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:338) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:45:17,613][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.6gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:45:17,616][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [1gb], compressed ordinary object pointers [true]
+[2021-06-23T00:45:17,617][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:45:17,618][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[56959], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/14.0.2/14.0.2+12-46]
+[2021-06-23T00:45:17,618][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.bGSDZXxz, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:45:18,737][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [aggs-matrix-stats]
+[2021-06-23T00:45:18,737][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [analysis-common]
+[2021-06-23T00:45:18,737][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [ingest-common]
+[2021-06-23T00:45:18,737][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-expression]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-mustache]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-painless]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [mapper-extras]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [parent-join]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [percolator]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [rank-eval]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [reindex]
+[2021-06-23T00:45:18,738][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [repository-url]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [transport-netty4]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [tribe]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-ccr]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-core]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-deprecation]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-graph]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-logstash]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-ml]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-monitoring]
+[2021-06-23T00:45:18,739][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-rollup]
+[2021-06-23T00:45:18,740][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-security]
+[2021-06-23T00:45:18,740][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-sql]
+[2021-06-23T00:45:18,740][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-upgrade]
+[2021-06-23T00:45:18,740][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-watcher]
+[2021-06-23T00:45:18,740][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded plugin [analysis-ik]
+[2021-06-23T00:45:21,103][INFO ][o.e.x.s.a.s.FileRolesStore] [LCgrVRs] parsed [0] roles from file [/Users/maiheri/Documents/work/elasticsearch-6.5.3/config/roles.yml]
+[2021-06-23T00:45:21,464][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [LCgrVRs] [controller/56981] [Main.cc@109] controller (64 bit): Version 6.5.3 (Build f418a701d70c6e) Copyright (c) 2018 Elasticsearch BV
+[2021-06-23T00:45:21,740][DEBUG][o.e.a.ActionModule       ] [LCgrVRs] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2021-06-23T00:45:21,875][INFO ][o.e.d.DiscoveryModule    ] [LCgrVRs] using discovery type [zen] and host providers [settings]
+[2021-06-23T00:45:22,152][ERROR][o.e.b.Bootstrap          ] [LCgrVRs] Guice Exception: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at <<<guice>>>
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	<<<truncated>>>
+
+[2021-06-23T00:45:22,157][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [LCgrVRs] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+3) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+4) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+5) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+6) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+7) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+8) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+9) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+10) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+11) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:59)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+12) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+13) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=10) was bound.
+  at _unknown_
+
+13 errors
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[elasticsearch-6.5.3.jar:6.5.3]
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+2) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+3) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+4) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+5) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+6) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+7) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+8) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+9) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+10) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:852)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+11) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectorsForMembers(InjectionPoint.java:370)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.addInjectionPoints(InjectionPoint.java:359)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:302)
+	at org.elasticsearch.common.inject.spi.InjectionPoint.forInstanceMethodsAndFields(InjectionPoint.java:323)
+	at org.elasticsearch.common.inject.internal.BindingBuilder.toInstance(BindingBuilder.java:90)
+	at org.elasticsearch.repositories.RepositoriesModule.lambda$configure$1(RepositoriesModule.java:68)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1425)
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1521)
+	at org.elasticsearch.repositories.RepositoriesModule.configure(RepositoriesModule.java:68)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:59)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+12) An exception was caught and reported. Message: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+  at _unknown_
+Caused by: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.jdk.internal.vm.annotation")
+	at java.base/java.security.AccessControlContext.checkPermission(AccessControlContext.java:472)
+	at java.base/java.security.AccessController.checkPermission(AccessController.java:1036)
+	at java.base/java.lang.SecurityManager.checkPermission(SecurityManager.java:408)
+	at java.base/java.lang.SecurityManager.checkPackageAccess(SecurityManager.java:1324)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:427)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:242)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:614)
+	at java.base/java.lang.reflect.Executable.declaredAnnotations(Executable.java:612)
+	at java.base/java.lang.reflect.Executable.getAnnotation(Executable.java:582)
+	at java.base/java.lang.reflect.Method.getAnnotation(Method.java:693)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.getProviderMethods(ProviderMethodsModule.java:87)
+	at org.elasticsearch.common.inject.internal.ProviderMethodsModule.configure(ProviderMethodsModule.java:78)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:221)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:233)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:96)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:142)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:89)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42)
+	at org.elasticsearch.node.Node.<init>(Node.java:600)
+	at org.elasticsearch.node.Node.<init>(Node.java:265)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86)
+
+13) No implementation for org.elasticsearch.repositories.Repository$Factory annotated with @org.elasticsearch.common.inject.multibindings.Element(setName=,uniqueId=10) was bound.
+  at _unknown_
+
+13 errors
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:361) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.common.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:92) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:96) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:42) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:600) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:212) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:333) ~[elasticsearch-6.5.3.jar:6.5.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-6.5.3.jar:6.5.3]
+	... 6 more
+[2021-06-23T00:54:32,544][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [328.8gb], net total_space [465.6gb], types [apfs]
+[2021-06-23T00:54:32,547][INFO ][o.e.e.NodeEnvironment    ] [LCgrVRs] heap size [989.8mb], compressed ordinary object pointers [true]
+[2021-06-23T00:54:32,549][INFO ][o.e.n.Node               ] [LCgrVRs] node name derived from node ID [LCgrVRsZQceyYIHPJ6IoQg]; set [node.name] to override
+[2021-06-23T00:54:32,549][INFO ][o.e.n.Node               ] [LCgrVRs] version[6.5.3], pid[57534], build[default/tar/159a78a/2018-12-06T20:11:28.826501Z], OS[Mac OS X/10.15.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.6/11.0.6+8-LTS]
+[2021-06-23T00:54:32,549][INFO ][o.e.n.Node               ] [LCgrVRs] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wc/_t55zfv9325_y3zbzhvnph7h0000gn/T/elasticsearch.DiW05lW2, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -XX:UseAVX=2, -Des.path.home=/Users/maiheri/Documents/work/elasticsearch-6.5.3, -Des.path.conf=/Users/maiheri/Documents/work/elasticsearch-6.5.3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2021-06-23T00:54:33,805][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [aggs-matrix-stats]
+[2021-06-23T00:54:33,805][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [analysis-common]
+[2021-06-23T00:54:33,805][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [ingest-common]
+[2021-06-23T00:54:33,805][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-expression]
+[2021-06-23T00:54:33,805][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-mustache]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [lang-painless]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [mapper-extras]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [parent-join]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [percolator]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [rank-eval]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [reindex]
+[2021-06-23T00:54:33,806][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [repository-url]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [transport-netty4]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [tribe]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-ccr]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-core]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-deprecation]
+[2021-06-23T00:54:33,807][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-graph]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-logstash]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-ml]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-monitoring]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-rollup]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-security]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-sql]
+[2021-06-23T00:54:33,808][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-upgrade]
+[2021-06-23T00:54:33,809][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded module [x-pack-watcher]
+[2021-06-23T00:54:33,809][INFO ][o.e.p.PluginsService     ] [LCgrVRs] loaded plugin [analysis-ik]
+[2021-06-23T00:54:36,315][INFO ][o.e.x.s.a.s.FileRolesStore] [LCgrVRs] parsed [0] roles from file [/Users/maiheri/Documents/work/elasticsearch-6.5.3/config/roles.yml]
+[2021-06-23T00:54:36,695][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [LCgrVRs] [controller/57563] [Main.cc@109] controller (64 bit): Version 6.5.3 (Build f418a701d70c6e) Copyright (c) 2018 Elasticsearch BV
+[2021-06-23T00:54:36,988][DEBUG][o.e.a.ActionModule       ] [LCgrVRs] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2021-06-23T00:54:37,131][INFO ][o.e.d.DiscoveryModule    ] [LCgrVRs] using discovery type [zen] and host providers [settings]
+[2021-06-23T00:54:37,678][INFO ][o.e.n.Node               ] [LCgrVRs] initialized
+[2021-06-23T00:54:37,678][INFO ][o.e.n.Node               ] [LCgrVRs] starting ...
+[2021-06-23T00:54:37,831][INFO ][o.e.t.TransportService   ] [LCgrVRs] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2021-06-23T00:54:40,881][INFO ][o.e.c.s.MasterService    ] [LCgrVRs] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {LCgrVRs}{LCgrVRsZQceyYIHPJ6IoQg}{du_sBSmXQa6T1kvlv6Rhkg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2021-06-23T00:54:40,885][INFO ][o.e.c.s.ClusterApplierService] [LCgrVRs] new_master {LCgrVRs}{LCgrVRsZQceyYIHPJ6IoQg}{du_sBSmXQa6T1kvlv6Rhkg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {LCgrVRs}{LCgrVRsZQceyYIHPJ6IoQg}{du_sBSmXQa6T1kvlv6Rhkg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2021-06-23T00:54:40,904][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [LCgrVRs] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2021-06-23T00:54:40,905][INFO ][o.e.n.Node               ] [LCgrVRs] started
+[2021-06-23T00:54:40,933][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [LCgrVRs] Failed to clear cache for realms [[]]
+[2021-06-23T00:54:40,966][INFO ][o.e.g.GatewayService     ] [LCgrVRs] recovered [0] indices into cluster_state
+[2021-06-23T00:54:41,010][INFO ][o.w.a.d.Monitor          ] [LCgrVRs] try load config from /Users/maiheri/Documents/work/elasticsearch-6.5.3/config/analysis-ik/IKAnalyzer.cfg.xml
+[2021-06-23T00:54:41,010][INFO ][o.w.a.d.Monitor          ] [LCgrVRs] try load config from /Users/maiheri/Documents/work/elasticsearch-6.5.3/plugins/ik/config/IKAnalyzer.cfg.xml
+[2021-06-23T00:54:41,224][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.watches] for index patterns [.watches*]
+[2021-06-23T00:54:41,265][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.watch-history-9] for index patterns [.watcher-history-9*]
+[2021-06-23T00:54:41,293][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2021-06-23T00:54:41,325][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-6-*]
+[2021-06-23T00:54:41,360][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.monitoring-es] for index patterns [.monitoring-es-6-*]
+[2021-06-23T00:54:41,389][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.monitoring-alerts] for index patterns [.monitoring-alerts-6]
+[2021-06-23T00:54:41,421][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.monitoring-beats] for index patterns [.monitoring-beats-6-*]
+[2021-06-23T00:54:41,456][INFO ][o.e.c.m.MetaDataIndexTemplateService] [LCgrVRs] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-6-*]
+[2021-06-23T00:54:41,535][INFO ][o.e.l.LicenseService     ] [LCgrVRs] license [b762f9d2-1bd1-4aa1-a303-dbf7c56c0d29] mode [basic] - valid
+[2021-06-23T00:59:07,822][INFO ][o.e.c.m.MetaDataCreateIndexService] [LCgrVRs] [test] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2021-06-23T01:00:05,101][INFO ][o.e.c.m.MetaDataDeleteIndexService] [LCgrVRs] [test/NgjLZNmbQJCyMH_W2Lu0Ag] deleting index
+[2021-06-23T01:03:49,204][INFO ][o.e.c.m.MetaDataCreateIndexService] [LCgrVRs] [test] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2021-06-23T01:04:01,759][INFO ][o.e.c.m.MetaDataDeleteIndexService] [LCgrVRs] [test/sWSbNF1eSWmPLyw4BQja3g] deleting index
+[2021-06-23T01:05:42,389][INFO ][o.e.c.m.MetaDataCreateIndexService] [LCgrVRs] [test] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2021-06-23T01:05:43,080][INFO ][o.e.c.m.MetaDataMappingService] [LCgrVRs] [test/EKHvcaWvR0qbM6K4CxKZoQ] create_mapping [_doc]
+[2021-06-23T01:08:43,973][INFO ][o.e.c.m.MetaDataMappingService] [LCgrVRs] [test/EKHvcaWvR0qbM6K4CxKZoQ] update_mapping [_doc]
+[2021-06-23T16:35:56,383][INFO ][o.e.c.m.MetaDataCreateIndexService] [LCgrVRs] [discusspost] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings []
+[2021-06-23T16:35:57,144][INFO ][o.e.c.m.MetaDataMappingService] [LCgrVRs] [discusspost/o0IxWDjQRQWTg4_AYr-ThA] create_mapping [_doc]
+[2021-06-23T21:23:40,536][INFO ][o.e.c.m.MetaDataDeleteIndexService] [LCgrVRs] [discusspost/o0IxWDjQRQWTg4_AYr-ThA] deleting index
+[2021-06-23T22:08:21,723][INFO ][o.e.x.m.j.p.NativeController] [LCgrVRs] Native controller process has stopped - no new native processes can be started
+[2021-06-23T22:08:21,726][INFO ][o.e.n.Node               ] [LCgrVRs] stopping ...
+[2021-06-23T22:08:21,759][INFO ][o.e.x.w.WatcherService   ] [LCgrVRs] stopping watch service, reason [shutdown initiated]
+[2021-06-23T22:08:22,309][INFO ][o.e.n.Node               ] [LCgrVRs] stopped
+[2021-06-23T22:08:22,309][INFO ][o.e.n.Node               ] [LCgrVRs] closing ...
+[2021-06-23T22:08:22,338][INFO ][o.e.n.Node               ] [LCgrVRs] closed

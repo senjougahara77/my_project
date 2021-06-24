@@ -2,7 +2,7 @@ package com.maomao.community;
 
 import com.maomao.community.dao.AlphaDao;
 import com.maomao.community.service.AlphaService;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
